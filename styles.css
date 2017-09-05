@@ -1,0 +1,189 @@
+/* ...Universal... */
+
+* {
+  font-family: Helvetica;
+  background-color: #f2f2f2;
+  opacity: 0.99;
+}
+
+p {
+  text-align: justify;
+}
+
+/* ...Home Page Styles... */
+
+/* ...External Font... */
+
+@@font-face {
+  font-family: 'Hind';
+  src: url('https://fonts.googleapis.com/css?family=Hind');
+}
+#deogunheader {
+  font-family:  'Hind', sans-serif;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 400%;
+  padding: 100px 10px 0px 0px;
+
+}
+
+#menu {
+  background-color: #f2f2f2;
+    overflow: hidden;
+    -moz-box-shadow: 5px 5px 5px 5px #777777;
+    -webkit-box-shadow: 5px 5px 5px 5px #777777;
+    box-shadow: 5px 5px 5px 5px #777777;
+}
+
+/* Style the links inside the navigation bar */
+
+#menu a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+
+#menu a:hover {
+    background-color: #808080;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+
+#menu a.active {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.main {
+  text-align: center;
+  font-size: 100%;
+}
+
+#nitasha {
+  display: block;
+  margin: 0px auto;
+  opacity: 0.5;
+}
+
+.imagerow {
+padding: 10px 100px 10px 100px;
+}
+
+.photoborder {
+  border-radius: 50px;
+}
+/* ...About Me... */
+
+.bio {
+  font-weight: bold;
+  font-size: 175%;
+  padding: 100px 500px 10px 500px;
+  text-align: center;
+}
+
+#imss {
+  border-radius: 250px;
+  display: block;
+  margin: 0px auto;
+}
+
+#projectheader {
+  text-align: center;
+  font-size: 150%;
+  opacity: 0.8;
+}
+
+.projects {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  font-size: 100%;
+  color: #0000ff;
+}
+
+ol {
+  list-style-position: inside;
+  list-style-type: upper-roman;
+  text-align: center;
+  font-size: 200%;
+  color: black;
+}
+
+/* visited link */
+
+a:visited {
+    color: #0000ff;
+}
+
+/* hover over link */
+
+a:hover {
+    color: #ff0000;
+}
+
+
+/* ...Museum of Healing Image Grid... */
+
+.imagegrid {
+  padding: 10px 100px 10px 130px
+}
+
+/* ...Contact Me Form... */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: helvetica;
+    font-size: 100%;
+}
+
+/* ...Styled Submit Button... */
+
+input[type=submit] {
+    background-color: #808080;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+/* ...When hovering over submit button, change color of button to black... */
+input[type=submit]:hover {
+    background-color: #000000;
+    font-family: helvetica;
+    color: white;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#marbles {
+  border-radius: 25px;
+  display: block;
+  margin: 0px auto;
+}
