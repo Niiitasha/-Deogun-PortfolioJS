@@ -62,6 +62,58 @@ p {
     color: black;
 }
 
+/* Add a black background color to the top navigation */
+.mainmenu {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.mainmenu a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.mainmenu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Hide link that opens and closes the mainmenu on small screens */
+.mainmenu .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the mainmenu (.icon) */
+@media screen and (max-width: 600px) {
+  .mainmenu a:not(:first-child) {display: none;}
+  .mainmenu a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to mainmenu with JavaScript when the user clicks on the icon. Displays links vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .mainmenu.responsive {position: relative;}
+  .mainmenu.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .mainmenu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 .main {
   text-align: center;
   font-size: 100%;
@@ -74,7 +126,7 @@ p {
 }
 
 .imagerow {
-padding: 10px 100px 10px 100px;
+  padding: 10px 0px 10px 0px;
 }
 
 .photoborder {
@@ -84,8 +136,8 @@ padding: 10px 100px 10px 100px;
 
 .bio {
   font-weight: bold;
-  font-size: 175%;
-  padding: 100px 500px 10px 500px;
+  font-size: 150%;
+  padding: 100px 200px 10px 200px;
   text-align: center;
 }
 
@@ -138,7 +190,11 @@ a:hover {
 /* ...Museum of Healing Image Grid... */
 
 .imagegrid {
-  padding: 10px 100px 10px 130px
+  width: "100%";
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+padding-top: auto;
 }
 
 /* ...Contact Me Form... */
@@ -184,6 +240,16 @@ input[type=submit]:hover {
 
 #marbles {
   border-radius: 25px;
+  display: block;
+  margin: 0px auto;
+}
+
+#zodiacsign {
+  text-align: center;
+}
+
+#astrologychart {
+  border-radius: 250px;
   display: block;
   margin: 0px auto;
 }

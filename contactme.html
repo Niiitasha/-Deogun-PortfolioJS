@@ -10,6 +10,20 @@
 
 <body>
 
+  <header>
+   <!-- Responsive Navigation Bar-->
+
+  <div class= "mainmenu" id= "menu">
+
+  <a href= "index.html">Home</a>
+  <a href= "aboutme.html">About</a>
+  <a href= "moh.html">Museum of Healing</a>
+  <a href= "contactme.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  </header>
+
 <img id="marbles" src= "images/ContactMe3.jpg" />
 
   <div class="container">
@@ -28,6 +42,35 @@
 
   </form>
 </div>
+
+<h2 id= "zodiacsign">One more important question... What's your zodiac sign?</h2>
+
+<img id="astrologychart" src= "images/zodiac.jpg" />
+
+<p>Please input a number between 1 and 12 that corresponds to your birth month:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="horoscope"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"//
+    x = document.getElementById("numb").value;
+
+    // If x is not a Number or less than one or greater than 12 //
+    if (isNaN(x) || x < 1 || x > 12) {
+        text = "Input not valid";
+    } else {
+        text = "Now I can guess your horoscope!";
+    }
+    document.getElementById("horoscope").innerHTML = text;
+}
+</script>
 
 <footer>
 <p class="main">
